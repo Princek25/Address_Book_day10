@@ -55,6 +55,33 @@ public class AddressBook {
             }
         }
     }
+    public void addMultipleContact(){
+
+        System.out.println("Enter number of contact to add");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        for (int i=0;i<num;i++) {
+            System.out.println("Enter First Name");
+            String firstName = sc.next();
+            System.out.println("Enter Last Name");
+            String lastName = sc.next();
+            System.out.println("Enter Address");
+            String address =  sc.next();
+            System.out.println("Enter City");
+            String city = sc.next();
+            System.out.println("Enter State");
+            String state = sc.next();
+            System.out.println("Enter ZIP Code");
+            int zip = sc.nextInt();
+            System.out.println("Enter your phone number");
+            int phoneNo = sc.nextInt();
+            System.out.println("Enter Email ID");
+            String email = sc.next();
+
+
+
+        }
+    }
 
     public static void main(String[] args) {
         AddressBook addressBook = new AddressBook();
@@ -65,6 +92,8 @@ public class AddressBook {
         addressBook.editContact();
         System.out.println(addressBook.list);
         addressBook.deleteContact();
+        System.out.println(addressBook.list);
+        addressBook.addMultipleContact();
         System.out.println(addressBook.list);
     }
 }
